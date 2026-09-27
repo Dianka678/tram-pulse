@@ -1,0 +1,7 @@
+﻿factor,source_url,local_evidence,usage,measured_increment_current_model,limitations
+weather_ERA5,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2025-01-01&end_date=2025-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Csnowfall%2Csnow_depth%2Cwind_speed_10m%2Ccloud_cover&timezone=Europe%2FMoscow&models=era5,model/ml/forecast/weather_source.json,WeatherEnsemble routes 7 and 50,not provided,"Retrospective reanalysis, not forecast known at cutoff; weather_report.json missing"
+calendar_2025,,model/ml/forecast/core.py,calendar features; route25 calendar_1.0,not provided,Primary calendar URL missing in source release; no 2026 calendar
+POI_OSM,https://overpass-turbo.eu/,data/context_sources.json; data/stop_poi.csv,Contextual stop scenarios,not measured,400m radius; partial coverage; current snapshot; hours/history unverified
+route_changes,https://transport.mos.ru/mostrans/all_news/125272,data/ and historical research in original release,Historical case and manual scenarios,not established for current ensemble,Publication date and forecast cutoff must be separated; no network-wide registry
+traffic,,,Not connected,not measured,No historical traffic series supplied
+development_projects,User-supplied source per project,Scenario input developments[],Scenario ramp-up of assumed demand,not measured,Source not automatically verified; manually assumed transport shares
